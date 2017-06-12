@@ -1,0 +1,194 @@
+nav {
+  background-color: $primary-color;
+}
+
+
+// ## Buttons
+.btn, .btn-large {
+  background-color: $secondary-color;
+  &:hover {
+    background-color: $button-background-focus;
+  }
+  &:focus {
+    background-color: darken($button-raised-background, 10%);
+  }
+}
+
+// ## Collections
+.collection {
+  margin: $element-top-margin 0 $element-bottom-margin 0;
+  border: 1px solid $collection-border-color;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative;
+
+  .collection-item {
+    background-color: $collection-bg-color;
+    line-height: $collection-line-height;
+    padding: 10px 20px;
+    margin: 0;
+    border-bottom: 1px solid $collection-border-color;
+
+    // Avatar Collection
+    &.avatar {
+      min-height: 84px;
+      padding-left: 72px;
+      position: relative;
+
+      .circle {
+        position: absolute;
+        width: 42px;
+        height: 42px;
+        overflow: hidden;
+        left: 15px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      i.circle {
+        font-size: 18px;
+        line-height: 42px;
+        color: #fff;
+        background-color: #999;
+        text-align: center;
+      }
+
+
+      .title {
+        font-size: 16px;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      .secondary-content {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+      }
+
+    }
+
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    &.active {
+      background-color: $collection-active-bg-color;
+      color: $collection-active-color;
+
+      .secondary-content {
+        color: #fff;
+      }
+    }
+  }
+  a.collection-item{
+    display: block;
+    transition: .25s;
+    color: $collection-link-color;
+    &:not(.active) {
+      &:hover {
+        background-color: $collection-hover-bg-color;
+      }
+    }
+  }
+
+  &.with-header {
+    .collection-header {
+      background-color: $collection-bg-color;
+      border-bottom: 1px solid $collection-border-color;
+      padding: 10px 20px;
+    }
+    .collection-item {
+      padding-left: 30px;
+    }
+    .collection-item.avatar {
+      padding-left: 72px;
+    }
+  }
+}
+
+// ## DropDown
+.dropdown-content {
+  @extend .z-depth-1;
+  background-color: $dropdown-bg-color;
+  margin: 0;
+  display: none;
+  min-width: 100px;
+  max-height: 650px;
+  overflow-y: auto;
+  opacity: 0;
+  position: absolute;
+  z-index: 999;
+  will-change: width, height;
+
+  li {
+    clear: both;
+    color: $off-black;
+    cursor: pointer;
+    min-height: $dropdown-item-height;
+    line-height: 1.5rem;
+    width: 100%;
+    text-align: left;
+    text-transform: none;
+
+    &:hover, &.active, &.selected {
+      background-color: $dropdown-hover-bg-color;
+    }
+
+    &.active.selected {
+      background-color: darken($dropdown-hover-bg-color, 5%);
+    }
+
+    &.divider {
+      min-height: 0;
+      height: 1px;
+    }
+
+    & > a, & > span {
+      font-size: 16px;
+      color: $dropdown-color;
+      display: block;
+      line-height: 22px;
+      padding: (($dropdown-item-height - 22) / 2) 16px;
+    }
+
+    & > span > label {
+      top: 1px;
+      left: 0;
+      height: 18px;
+    }
+
+    // Icon alignment override
+    & > a > i {
+      height: inherit;
+      line-height: inherit;
+      float: left;
+      margin: 0 24px 0 0;
+      width: 24px;
+    }
+  }
+}
+
+// Input field specificity bugfix
+.input-field.col .dropdown-content [type="checkbox"] + label {
+  top: 1px;
+  left: 0;
+  height: 18px;
+}
+
+
+
+
+// Spinner
+.spinner-layer {
+  border-color: #F6A2AD;
+}
+
+// title with material icons
+h1 .material-icons {
+  margin-right: 10px;
+  position: relative;
+  top: 8px;
+}

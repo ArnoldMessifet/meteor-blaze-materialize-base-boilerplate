@@ -1,0 +1,16 @@
+<template name="contact">
+
+    <!-- #template name="contact" -->
+
+            <h1><i class="medium material-icons">contacts</i>{{_ 'contacts.list.title'}}</h1>
+    {{#momentum plugin="fade"}}
+        {{#if Template.subscriptionsReady}}
+            {{> contactsList contacts=contacts}}
+        <!--{{else}}-->
+            <!--{{> App_loading}}-->
+        {{/if}}
+    {{/momentum}}
+
+    <!-- /template name="contact" -->
+
+</template>

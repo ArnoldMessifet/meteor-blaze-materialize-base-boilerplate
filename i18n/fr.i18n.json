@@ -1,0 +1,16 @@
+{
+  "home": {},
+  "contacts": {
+    "list": {
+      "title": "Liste des contacts"
+    }
+  },
+  "layouts": {
+    "appBody": {
+      "logout": "Se déconnecter",
+      "login": "Se connecter",
+      "tryingToConnect": "Tentative de connexion",
+      "connectionIssue": "Il semble y avoir un problème de connexion"
+    }
+  }
+}

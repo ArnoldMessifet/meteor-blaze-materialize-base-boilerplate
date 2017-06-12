@@ -1,0 +1,31 @@
+<template name="contactForm">
+
+    <!-- #template name="contactForm" -->
+
+    <div class="panel panel-default wrapper">
+        <div class="panel-body">
+            {{# autoForm collection=formConfig.collection
+                    schema=formConfig.schema
+                    id=formConfig.id
+                    type=formConfig.type
+                    meteormethod=formConfig.method
+                    doc=formConfig.doc}}
+                {{> afQuickField name="lastname" template="bootstrap3-horizontal" label-class="col-lg-2 text-right" input-col-class="col-lg-10"}}
+                {{> afQuickField name="firstname" template="bootstrap3-horizontal" label-class="col-lg-2 text-right" input-col-class="col-lg-10"}}
+                {{> afQuickField name="email" template="bootstrap3-horizontal" label-class="col-lg-2 text-right" input-col-class="col-lg-10"}}
+                {{> afQuickField name="phone" template="bootstrap3-horizontal" label-class="col-lg-2 text-right" input-col-class="col-lg-10"}}
+
+                {{# if formConfig.buttonContent}}
+                <div class="form-group">
+                    <div class="col-lg-10 col-lg-offset-2">
+                        <button type="submit" class="btn btn-primary">{{formConfig.buttonContent}}</button>
+                    </div>
+                </div>
+                {{/ if}}
+            {{/ autoForm}}
+        </div>
+    </div>
+
+    <!-- /template name="contactForm" -->
+
+</template>

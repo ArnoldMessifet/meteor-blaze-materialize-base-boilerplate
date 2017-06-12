@@ -1,0 +1,26 @@
+.table_length {
+  .select-wrapper {
+    width: 70px;
+    display: inline-block;
+    margin-right: 10px;
+    input.select-dropdown {
+      padding-left: 15px;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .dropdown-content {
+      min-width: 70px;
+    }
+  }
+  &.input-field label {
+    position: relative;
+    top: 0;
+  }
+}
+
+.dataTables_filter {
+  margin-top: 15px;
+  input {
+    margin: 0;
+  }
+}

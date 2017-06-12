@@ -1,0 +1,44 @@
+<template name="layoutBody">
+
+    <!-- #template name="layoutBody" -->
+
+    {{#unless connected}}
+        <div class="notifications">
+            <div class="notification">
+                <i class="material-icons">settings_input_composite</i>
+                <div class="meta">
+                    <div class="title-notification">
+                        {{_ 'layouts.appBody.tryingToConnect'}}
+                    </div>
+                    <div class="description">
+                        {{_ 'layouts.appBody.connectionIssue'}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/unless}}
+
+    <div id="container">
+
+        <header>
+            {{> header}}
+        </header>
+
+        <aside>
+            {{> sidebar links=links}}
+        </aside>
+
+        <main>
+            <div class="row">
+                <div class="col s10 offset-s1">
+                    {{> Template.dynamic template=main}}
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+
+    <!-- /template name="layoutBody" -->
+
+</template>

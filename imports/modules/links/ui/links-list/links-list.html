@@ -1,0 +1,18 @@
+<template name="linksList">
+
+    <div class="collection">
+        {{#momentum plugin="fade"}}
+            {{#if linksReady }}
+                {{#each links}}
+                    <div class="collection-item">
+                        <a href="{{url}}" class="collection-item" target="_blank">{{title}}</a>
+                        <i class="material-icons right js-delete-action">delete</i>
+                    </div>
+                {{/each}}
+            {{else}}
+                {{> materialSpinner}}
+            {{/if}}
+        {{/momentum}}
+    </div>
+
+</template>

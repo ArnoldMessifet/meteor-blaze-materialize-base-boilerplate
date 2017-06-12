@@ -1,0 +1,60 @@
+// Notification message (e.g., when unable to connect)
+.notifications {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: 10px;
+  left: 50%;
+  width: 300px;
+  height: auto;
+  transform: translate3d(-50%, 0, 0);
+  z-index: 1;
+
+  @media screen and (min-width: 40em) {
+    transform: translate3d(0, 0, 0);
+    bottom: auto;
+    right: 1rem;
+    top: 8rem;
+    left: auto;
+  }
+
+  .notification {
+    font-size: 12px;
+    line-height: 16px;
+    background: rgba(51,51,51, .85);
+    color: #ffffff;
+    margin-bottom: .25rem;
+    padding: 1rem .75rem;
+    position: relative;
+    width: 100%;
+
+    .icon-sync {
+      position: absolute;
+      top: 30%;
+      right: auto;
+      bottom: auto;
+      left: 1rem;
+      width: auto;
+      height: auto;
+      animation: spin 2s infinite linear;
+      color: #ffffff;
+      font-size: 1.5em;
+    }
+
+    .meta {
+      overflow: hidden;
+      padding-left: 3em;
+
+      .title-notification {
+        letter-spacing: .3em;
+        text-indent: .3em;
+        text-transform: uppercase;
+        display: block;
+      }
+
+      .description {
+        display: block;
+      }
+    }
+  }
+}
