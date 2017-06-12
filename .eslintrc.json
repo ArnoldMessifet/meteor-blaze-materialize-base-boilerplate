@@ -1,0 +1,27 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "meteor": true,
+    "es6": true,
+    "mocha": true
+  },
+  "parser": "Babel-ESlint",
+  "extends": [
+    "airbnb",
+    "@meteorjs/eslint-config-meteor"
+  ],
+  "import/resolver": "meteor",
+  "plugins": [
+    "jsx-a11y",
+    "import",
+    "meteor"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      4
+    ],
+    "no-underscore-dangle": "off"
+  }
+}

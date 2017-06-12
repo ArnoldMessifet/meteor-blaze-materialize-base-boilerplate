@@ -1,0 +1,28 @@
+
+nav {
+  .brand-logo {
+    padding-top: 7px;
+
+    .logo-meteor {
+      width: 150px;
+    }
+    .logo-materialize {
+      width: 80px;
+    }
+  }
+}
+
+@media #{$small-and-down} {
+  nav {
+    .brand-logo {
+      padding-top: 0;
+
+      .logo-meteor {
+        width: 120px;
+      }
+      .logo-materialize {
+        width: 50px;
+      }
+    }
+  }
+}

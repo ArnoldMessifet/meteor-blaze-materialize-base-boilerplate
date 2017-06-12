@@ -1,0 +1,79 @@
+# Meteor packages used by this project, one per line.
+# Check this file (and the other files in this directory) into your repository.
+#
+# 'meteor add' and 'meteor remove' will edit this file for you,
+# but you can also edit it by hand.
+
+# meteor libraries
+meteor-base@1.1.0               # Packages every Meteor app needs to have
+ecmascript@0.8.0                # Enable ECMAScript2015+ syntax in app code
+es5-shim@4.6.15                 # ECMAScript 5 compatibility for older browsers
+tracker@1.1.3                   # Meteor's client-side reactive programming library
+
+# standard libraries
+fourseven:scss
+deanius:promise
+
+# ui
+blaze-html-templates            # Compile .html files into Meteor Blaze views
+materialize:materialize         # Materialize (official): A modern responsive front-end framework based on Material Design
+mozfet:autoform-materialize     # Adds materialize templates for autoform.
+reactive-dict
+reactive-var                    # Reactive variable for tracker
+percolate:momentum
+
+# data
+mongo@1.1.18                    # The database Meteor supports right now
+dburles:collection-helpers
+mdg:validated-method
+didericis:callpromise-mixin
+aldeed:autoform
+aldeed:autoform-select2         # Custom select2 input type for AutoForm
+
+
+# routing
+kadira:flow-router              # FlowRouter is a very simple router for Meteor
+kadira:blaze-layout             # Layout manager for blaze (works well with FlowRouter)
+arillo:flow-router-helpers
+zimme:active-route
+
+# i18n
+tap:i18n
+
+# accounts
+accounts-password
+useraccounts:materialize
+useraccounts:flow-routing
+softwarerero:accounts-t9n
+
+# mobile
+mobile-experience@1.0.4         # Packages for a great mobile UX
+
+# production
+standard-minifier-css@1.3.4   # CSS minifier run for production mode
+standard-minifier-js@2.1.0    # JS minifier run for production mode
+
+# testing
+practicalmeteor:mocha             # A package for writing and running your meteor app and package tests with mocha
+practicalmeteor:chai
+johanbrook:publication-collector  # Test a Meteor publication by collecting its output
+xolvio:cleaner
+dburles:factory
+
+# security
+audit-argument-checks
+
+
+
+
+
+
+
+
+
+
+
+
+
+aldeed:collection2-core
+am25:material-spinner
